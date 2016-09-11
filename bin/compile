@@ -208,7 +208,7 @@ if [ -d $BUILD_DIR/PerfectLibraries -a -d $BUILD_DIR/webroot ]; then
   else
     fail Creating application directories
   fi
-cd $BUILD_DIR/src
+cd $BUILD_DIR/API
 make > $BUILD_DIR/build.log 2>&1 || fail make
 make install > $BUILD_DIR/build.log 2>&1 || fail make install
 popd
