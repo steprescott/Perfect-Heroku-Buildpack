@@ -1,7 +1,7 @@
 #!/bin/bash
 echo $1
 
-if [ -f $1/API/Package.perfect -a -f $1/src/makefile ]; then
+if [ -f $1/API/Package.perfect -a -f $1/API/makefile ]; then
     echo "Perfect"
     exit 0
   else
