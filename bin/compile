@@ -99,7 +99,6 @@ step Setting paths
 say Ok
 
 step Checking dependencies
-swift build
 if [ -f $CACHE_DIR/depends_done.$SCRIPT_VER ]; then
     say Dependencies cached
   else
@@ -211,7 +210,7 @@ if [ -d $BUILD_DIR/PerfectLibraries -a -d $BUILD_DIR/webroot ]; then
   fi
 cd $BUILD_DIR/API
 make > $BUILD_DIR/build.log 2>&1 || fail make
-make install > $BUILD_DIR/build.log 2>&1 || fail make install
+#make install > $BUILD_DIR/build.log 2>&1 || fail make install
 popd
 say Ok
 
