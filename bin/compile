@@ -99,6 +99,7 @@ step Setting paths
 say Ok
 
 step Checking dependencies
+swift build
 if [ -f $CACHE_DIR/depends_done.$SCRIPT_VER ]; then
     say Dependencies cached
   else
